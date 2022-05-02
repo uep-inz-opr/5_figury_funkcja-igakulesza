@@ -56,7 +56,7 @@ lista2= []
 
 for i in listka:
  if len(i) >=4:
-  lista2.append(1)
+  break
 
 if len(lista2)==0:
  print(suma)
