@@ -50,7 +50,7 @@ for i in range(int(liczbafigur)):
   liczba3=Trojkat(float(figura[0]),float(figura[1]),float(figura[2]))
   liczba3.poletrojkata()
   c=round(c+liczba3.suma3,2)
- suma = round((a + b + c), 2)
+suma = round((a + b + c), 2)
 
 lista2= []
 
