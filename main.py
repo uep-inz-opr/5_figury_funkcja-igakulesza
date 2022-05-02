@@ -24,7 +24,7 @@ class Trojkat:
   p=(self.ramie1+self.ramie2+self.ramie3)/2
   pole3=round(math.sqrt((p*(p-self.ramie1)*(p-self.ramie2)*(p-self.ramie3))),2)
   self.suma3=self.suma3+pole3
-liczbafigur=input()
+liczbafigur=input().strip()
 liczbafigur = liczbafigur[0]
 listafigur = []
 a=0
@@ -36,7 +36,7 @@ liczbafigur = float(liczbafigur)
 
 
 for i in range(int(liczbafigur)):
- figura = input().split()
+ figura = input().strip().split()
  listka.append(figura)
  if len(figura) == 1:
   liczba1=Kolo(float(figura[0]))
@@ -62,3 +62,4 @@ if len(lista2)==0:
  print(suma)
 else:
  print ('Błąd: można podać maksymalnie 3 liczby')
+
