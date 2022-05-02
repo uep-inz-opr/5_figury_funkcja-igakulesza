@@ -24,25 +24,29 @@ class Trojkat:
   p=(self.ramie1+self.ramie2+self.ramie3)/2
   pole3=round(math.sqrt((p*(p-self.ramie1)*(p-self.ramie2)*(p-self.ramie3))),2)
   self.suma3=self.suma3+pole3
-iloscfigur=float(input())
+liczbafigur=input()
 listafigur = []
 a=0
 b=0
 c=0
-for i in range(int(iloscfigur)):
- figura = input().split()
+if len(liczbafigur)!=1:
+ print('Błąd: można podać maksymalnie 3 liczby')
+else:
+ liczbafigur = float(liczbafigur)
+ for i in range(int(liczbafigur)):
+  figura = input().split()
 
- if len(figura)is 1:
-  liczba1=Kolo(float(figura[0]))
-  liczba1.polekola()
-  a=round(a+liczba1.suma1,2)
- elif len(figura)is 2:
-  liczba2=Prostokat(float(figura[0]),float(figura[1]))
-  liczba2.poleprostokata()
-  b=round(b+liczba2.suma2,2)
- elif len(figura) is 3:
-  liczba3=Trojkat(float(figura[0]),float(figura[1]),float(figura[2]))
-  liczba3.poletrojkata()
-  c=round(c+liczba3.suma3,2)
-suma=round((a+b+c),2)
-print(suma)
+  if len(figura)is 1:
+   liczba1=Kolo(float(figura[0]))
+   liczba1.polekola()
+   a=round(a+liczba1.suma1,2)
+  elif len(figura)is 2:
+   liczba2=Prostokat(float(figura[0]),float(figura[1]))
+   liczba2.poleprostokata()
+   b=round(b+liczba2.suma2,2)
+  elif len(figura) is 3:
+   liczba3=Trojkat(float(figura[0]),float(figura[1]),float(figura[2]))
+   liczba3.poletrojkata()
+   c=round(c+liczba3.suma3,2)
+  suma=round((a+b+c),2)
+ print(suma)
