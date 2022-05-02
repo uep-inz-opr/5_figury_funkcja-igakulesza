@@ -55,7 +55,7 @@ suma = round((a + b + c), 2)
 lista2= []
 
 for i in listka:
- if len(i) >3:
+ if len(i) >=4:
   lista2.append(1)
 
 if len(lista2)==0:
